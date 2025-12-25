@@ -94,6 +94,7 @@ footer{
   top: 26px;
   box-shadow: 0 6px 15px rgba(56, 189, 248, 0.45);
 }
+
 .steps-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
