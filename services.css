@@ -3,16 +3,11 @@
   top: 0;
   z-index: 1000;
   box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.2);
-
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 25px 45px;
-
-  /* Initial blue */
   background-color:  #0F1C3F;
-
-  /* Glass preparation */
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
 
@@ -21,31 +16,26 @@
 .navbar a:hover{
   color: #38BDF8;
 }
-
 .logo {
   font-size: 35px;
   font-weight: bold;
 }
-
 .nav-links {
   display: flex;
   text-align: center;
   gap:50px
 }
-
 .nav-links a {
   color: white;
   text-decoration: none;
   font-weight: 500;
   font-size: 20px;  
 }
-
 .hamburger {
   display: none;
   font-size: 1.5em;
   cursor: pointer;
 }
-
 
 .nav-links.active {
     display: flex;
@@ -57,31 +47,58 @@ footer{
   padding: 20px;
   color: white;
 }
+.action-section {
+  min-height: calc(100vh - 160px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 380px;         
+  height: 95px;
+  background-image: linear-gradient(
+    to top,
+    #0ea5e9 0%,
+    #38BDF8 80%,
+    #5fd1ff 100%
+  );
+  border-radius: 45px;
+  border: 1px solid #0b7db4;
+  font-size: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  box-shadow:
+    0 6px 10px rgba(0, 0, 0, 0.25),
+    0 -4px 6px rgba(255, 255, 255, 0.25),
+    inset 0 -3px 6px rgba(0, 0, 0, 0.25);
+  transition: all 0.25s ease;
+}
+.action-btn:hover {
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.35),
+    0 -4px 8px rgba(255, 255, 255, 0.3),
+    inset 0 -2px 5px rgba(0, 0, 0, 0.2);
 
+  transform: translateY(-3px);
+}
+.action-btn:active,
+.action-btn:focus {
+  box-shadow:
+    inset 0 4px 8px rgba(0, 0, 0, 0.4),
+    inset 0 -2px 6px rgba(255, 255, 255, 0.2);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  transform: scale(0.98);
+}
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -101,5 +118,10 @@ footer{
   .hamburger {
     display: block;
     color: white;
+  }
+  .action-btn {
+    width: 90%;
+    height: 85px;
+    font-size: 22px;
   }
 }
