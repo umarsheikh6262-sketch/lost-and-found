@@ -68,7 +68,7 @@ body {
 
   padding: 50px 60px;
   /* background: linear-gradient(200deg, #0a6084, #152c69); */
-  background: linear-gradient(200deg, #0a6084, #0f4a4f);
+  background: linear-gradient(to right, #045e63, #004e92);
 }
 
 .welcome {

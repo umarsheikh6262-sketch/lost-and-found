@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
 .navbar {
   position: sticky;
   top: 0;
@@ -59,15 +64,101 @@ footer{
 }
 
 
+.hero-section {
+  display: flex;
+  align-items: center;          /* vertically center text and image */
+  justify-content: space-between; /* push text left, image right */
+  padding: 60px 40px;
+  
+  background: white;
+}
+
+.hero-text {
+ 
+  max-width: 50%;               /* keep text on one side */
+  color: #000000;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.hero-text h1 {
+  font-size: 80px;
+  margin-bottom: 20px;
+  padding-left: 200px;
+}
+
+.hero-text p {
+  font-family: "Architects Daughter", cursive;
+  font-size: 1.25rem;
+  color: #000000;
+  padding-left: 200px;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: flex-end;   
+}
+
+.hero-image img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  padding: 60px;
+}
 
 
 
+.contributors {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  padding: 5rem;
+  flex-wrap: wrap;
+}
 
+.contributor-card {
+  background: linear-gradient(200deg, #1f9acf, #0c393d);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 1.5rem;
+  max-width: 300px;
+  text-align: center;
+  color: white;
+  transition: transform 0.4s ease;
+}
 
+.contributor-card:hover {
+  transform: translateY(-5px);
+}
 
+.contributor-card img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
 
+.role {
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0.5rem 0;
+}
 
+.tagline {
+  font-style: italic;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
 
+.social-icons a {
+  margin: 0 0.5rem;
+  color: #ffffff;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #0077b5; /* LinkedIn blue */
+}
 
 
 

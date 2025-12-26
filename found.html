@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CAMPUSfind</title>
+  <link rel="stylesheet" href="./found.css">
+</head>
+<style>
+  
+</style>
+<script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+  }
+</script>
+
+<body>
+  <header class="navbar">
+  <div class="logo" style="color: white;">
+    🔍CAMPUS<i style="font-family: serif; color: tomato;">find.</i>
+  </div>
+
+  <!-- Hamburger icon goes here -->
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="./index.html" >Home</a>
+    <a href="./services.html" target="_blank">Services</a>
+    <a href="./working.html" target="_blank">Working</a>
+    <a href="./contributors.html" target="_blank">Contributors</a>
+    <button style="background-color: #007BFF; border-style: none;padding: 5px;  ">
+      <a href="./admin.html" target="_blank" style="color: rgb(255, 253, 253);">Administrator</a>
+    </button>
+  </nav>
+</header>
+
+
+
+<div class="form-container"> <h2>Fill the Information about Found Item.</h2> 
+    <form action="./submit.html" method="post">
+         <label for="title">Item Title</label> 
+         <input required type="text" id="title" name="title" placeholder="e.g. Black Wallet">
+          <label for="description">Description</label>
+          <textarea required id="description" name="description" placeholder="Describe the item...">
+          </textarea> 
+          <label for="date">Date Lost</label> 
+          <input required type="date" id="date" name="date"> 
+          <label for="location">Location</label>
+          <input required type="text" id="location" name="location" placeholder="e.g. Library, Cafeteria">
+          <label for="category">Category</label> 
+          <select required id="category" name="category"> 
+                <option value="">Select Category</option> 
+                <option value="electronics">Electronics</option> 
+                <option value="clothing">Clothing</option> 
+                <option value="documents">Documents</option> 
+                <option value="accessories">Accessories</option>
+                <option value="other">Other</option> 
+          </select> 
+          <label for="contact">Contact Info</label>
+          <input required type="text" id="contact" name="contact" placeholder="Email or phone number">
+          <a href="./submit.html" style="text-decoration: none;">
+  <button type="submit" class="submit-btn">Submit</button>
+</a>
+
+        </form> 
+        </div>
+
+
+
+<footer>
+    <p>&copy;CAMPUSFIND:LOST AND FOUND MANAGEMENT SYSTEM</p>
+</footer>
+</body>
+</html>
