@@ -61,48 +61,38 @@ footer{
   display: flex;
   flex-direction: column;
   gap: 30px;
+  align-items: center;
 }
+
 .action-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 380px;         
+  gap: 12px; /* space between icon and text */
+  width: 380px;
   height: 95px;
-  background-image: linear-gradient(
-    to top,
-    #0ea5e9 0%,
-    #38BDF8 80%,
-    #5fd1ff 100%
-  );
+  background: linear-gradient(135deg, #38BDF8, #0ea5e9);
   border-radius: 45px;
-  border: 1px solid #0b7db4;
+  border: none;
   font-size: 26px;
   font-weight: 700;
   color: #ffffff;
   cursor: pointer;
   outline: none;
-  box-shadow:
-    0 6px 10px rgba(0, 0, 0, 0.25),
-    0 -4px 6px rgba(255, 255, 255, 0.25),
-    inset 0 -3px 6px rgba(0, 0, 0, 0.25);
-  transition: all 0.25s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
 }
+
 .action-btn:hover {
-  box-shadow:
-    0 10px 20px rgba(0, 0, 0, 0.35),
-    0 -4px 8px rgba(255, 255, 255, 0.3),
-    inset 0 -2px 5px rgba(0, 0, 0, 0.2);
-
-  transform: translateY(-3px);
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(135deg, #0ea5e9, #5fd1ff);
 }
-.action-btn:active,
-.action-btn:focus {
-  box-shadow:
-    inset 0 4px 8px rgba(0, 0, 0, 0.4),
-    inset 0 -2px 6px rgba(255, 255, 255, 0.2);
 
-  transform: scale(0.98);
+.action-btn:active {
+  transform: scale(0.97);
 }
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;

@@ -5,34 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CAMPUSfind</title>
   <link rel="stylesheet" href="./admin.css">
-  <link href='https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css' rel='stylesheet'>
-
+  <!-- Boxicons CDN -->
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<style>
-  
-</style>
-<script>
-  function toggleMenu() {
-    document.getElementById("navLinks").classList.toggle("active");
-  }
-</script>
-
 <body>
+  <!-- Navbar -->
   <header class="navbar">
-  <div class="logo" style="color: white;">
-    🔍CAMPUS<i style="font-family: serif; color: tomato;">find.</i>
-  </div>
-
-  <div class="hamburger" onclick="toggleMenu()">☰</div>
-
-  <nav class="nav-links" id="navLinks">
-    <a href="./index.html" >Home</a>
-    <a href="./services.html" target="_blank">Services</a>
-    <a href="./working.html" target="_blank">Working</a>
-    <a href="./contributors.html" target="_blank">Contributors</a>
-    <button style="background-color: #007BFF; border-style: none;padding: 5px;  ">
-      <a href="./admin.html" target="_blank" style="color: rgb(255, 253, 253);">Administrator</a>
+    <div class="logo" style="color: white;">
+      🔍CAMPUS<i style="font-family: serif; color: tomato;">find.</i>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="./index.html">Home</a>
+      <a href="./services.html" target="_blank">Services</a>
+      <a href="./working.html" target="_blank">Working</a>
+      <a href="./contributors.html" target="_blank">Contributors</a>
+      <button style="background-color: #007BFF; border-style: none;padding: 4px;  ">
+      <a href="./admin.html"  style="color: rgb(255, 253, 253);">Administrator</a>
     </button>
+<<<<<<< HEAD
   </nav>
 </header>
 <div class="main-div">
@@ -51,11 +42,46 @@
     <input required placeholder="Password" id="password" class="inputField" type="password">
   </div>
    <a href="./home_admin.html"> <button id="button">Login</button></a>
+=======
+    </nav>
+  </header>
+>>>>>>> 12b3d3b5c073171feb2254e002ee31e8da233622
 
-  </form>
-</div>
-<footer>
-    <p>&copy;CAMPUSFIND:LOST AND FOUND MANAGEMENT SYSTEM</p>
-</footer>
+  <!-- Login Form -->
+  <div class="main-div">
+    <form class="form_main" action="./home_admin.html" method="post">
+      <p class="heading">🔑Login</p>
+      <!-- <p style="color: white; text-align: center;">"To access the admin panel you have to 
+        <br>enter your valid Email and Password 
+        <br>that was alloted to you"</p> -->
+
+      <!-- Username -->
+      <div class="inputContainer">
+        <i class='bx bx-user inputIcon'></i>
+        <input required placeholder="Username" id="username" class="inputField" type="text">
+      </div>
+
+      <!-- Password -->
+      <div class="inputContainer">
+        <i class='bx bx-lock-alt inputIcon'></i>
+        <input required placeholder="Password" id="password" class="inputField" type="password">
+      </div>
+
+      <!-- Submit Button -->
+      <button id="button" type="submit">Login</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; CAMPUSFIND: LOST AND FOUND MANAGEMENT SYSTEM</p>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("active");
+    }
+  </script>
 </body>
 </html>
